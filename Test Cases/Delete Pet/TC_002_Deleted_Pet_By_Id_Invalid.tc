@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_002_Deleted_Pet_By_Id_Invalid</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f5fa9717-a886-4a04-8ebe-bfcfeaff63d2</testCaseGuid>
+</TestCaseEntity>

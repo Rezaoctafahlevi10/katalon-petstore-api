@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_001_Delete_Pet_By_Id_Succes</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d332d6d4-a3fa-4f53-a3e5-350ffabb3d47</testCaseGuid>
+</TestCaseEntity>

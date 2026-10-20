@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_001_Get_Pet_By_Id_Succes</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cad1e6a3-46e6-4840-b6ec-f7ce196b9220</testCaseGuid>
+</TestCaseEntity>
