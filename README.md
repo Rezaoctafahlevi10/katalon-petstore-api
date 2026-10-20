@@ -28,7 +28,7 @@ Struktur direktori dan pengorganisasian *Test Cases* dalam project ini dibagi be
 ## 🧪 Test Coverage & Requirements
 
 Project ini memenuhi standar kriteria pengujian API otomatis dengan cakupan sebagai berikut:
-* **Minimum 4 Endpoint utama diuji:**
+* **4 Endpoint utama diuji:**
   1. `POST /v2/pet` (Membuat data pet baru)
   2. `PUT /v2/pet` (Memperbarui data pet)
   3. `GET /v2/pet/{petId}` (Mencari pet berdasarkan ID)
@@ -39,7 +39,25 @@ Project ini memenuhi standar kriteria pengujian API otomatis dengan cakupan seba
 * **Assertions:** Setiap *test case* dilengkapi validasi otomatis untuk **HTTP Status Code** dan **Response Body/Message**.
 
 ---
+## ✅ Covered Test Scenario
+| Test Case Id | Deskripsi | Method | Status Code |
+| :--- | :--- | :--- | :-- |
+| TC_001_Created Pet Succes | Succes Created Pet | POST | 200 OK|
+| TC_002_Created Pet Invalid | Gagal Created Pet | POST | 400 Bad Input|
+| TC_001_Delete_Pet_By_Id_Succes | Succes Delete Pet | DELETE | 200 OK |
+| TC_002_Delete_Pet_By_Id_Invalid| Gagal Delete Pet | DELETE | 404 Not Found |
+| TC_001_Get_Pet_By_Id_Succes| Succes Get Pet | GET | 200 OK |
+| TC_002_Get_Pet_By_Id_Invalid| Gagal Get Pet | GET | 404 Not Found |
+| TC_001_Put Pet Succes | Succes Put Pet | PUT | 200 OK |
+| TC_002_Put Pet Invalid| Gagal Put Pet | PUT | 400 Bad Input |
+| TC_001_E2E_PET| Gagal Delete Pet | POST,GET,PUT,DELETE | 200 OK |
 
+---
+## 📋 Test Suites 
+Test Suites (TS_001_PET) di dalam project ini digunakan untuk mengelompokkan dan menjalankan beberapa Test Cases secara berurutan dalam satu kali eksekusi.  Dalam test Suites ini terdapat 9 test case yang dijalankan dalam satu kali ekskusi. Cakupan dari Test Suite ini meliputi:   
+1. Eksekusi Alur Otomatis (Automated Sequence Execution): Menjalankan test case positif, negatif, dan E2E secara terstruktur guna mencegah kegagalan akibat ketergantungan data (misalnya: menjalankan Test Case POST terlebih dahulu untuk menghasilkan pet_id yang valid sebelum menjalankan test case GET, PUT, atau DELETE).
+2. Pelaporan Terpusat (Batch Reporting): Menghasilkan laporan eksekusi gabungan yang menampilkan status lulus/gagal (pass/fail) dari seluruh modul API secara bersamaan. Hasil Report dari Test Suites dapat dilihat pada link berikut : https://l1nk.dev/2ktt9wb
+-------
 ## ⚙️ Cara Menjalankan Project
 
 1. Buka aplikasi **Katalon Studio**.
@@ -54,4 +72,5 @@ Project ini memenuhi standar kriteria pengujian API otomatis dengan cakupan seba
 ---
 
 ## 🔒 Security Note
-Repository ini publik/aman karena tidak menyertakan informasi sensitif seperti *password*, *token*, *API key*, ataupun *secret key* apa pun.
+- Repository ini publik/aman karena tidak menyertakan informasi sensitif seperti *password*, *token*, *API key*, ataupun *secret key* apa pun.
+- Api dapat diakses pada: https://reqres.in
