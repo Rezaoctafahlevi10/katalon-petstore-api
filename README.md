@@ -10,7 +10,7 @@ Struktur direktori dan pengorganisasian *Test Cases* dalam project ini dibagi be
 
 - **Post Pet**
   - `TC_001_Created Pet Succes`
-  - `TC_002_Created Pet Succes`
+  - `TC_002_Created Pet Invalid`
 - **Delete Pet**
   - `TC_001_Delete_Pet_By_Id_Succes`
   - `TC_002_Deleted_Pet_By_Id_Invalid`
